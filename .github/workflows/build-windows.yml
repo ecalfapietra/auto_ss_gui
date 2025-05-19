@@ -30,7 +30,7 @@ jobs:
           pyinstaller --onefile --windowed gui.py
 
       - name: Publier l'artefact exe
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: gui-windows-exe
           path: dist/gui.exe
